@@ -1,7 +1,7 @@
-## Ma Baker V. The Universe
+# Ma Baker V. The Universe
 
-# Description
+## Description
 This is my entry to the HackSussex GameJam 2024, With a setting inspirtions by Boney M - Ma Baker and graphics and elements inspired by Retro Shoot 'em ups
 
-# Resources used:
+## Resources used:
 - Ma Baker Midi - https://bitmidi.com/ma-baker-1-mid
