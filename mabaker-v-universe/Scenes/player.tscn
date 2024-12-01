@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=3 uid="uid://bwq755jtn4lql"]
+
+[ext_resource type="Texture2D" uid="uid://yg7ach8puiux" path="res://Assets/Horror game player animations.png" id="1_nckvh"]
+[ext_resource type="Script" path="res://Scenes/player.gd" id="1_pddey"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yjaio"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jm12k"]
+atlas = ExtResource("1_nckvh")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wbbnp"]
+atlas = ExtResource("1_nckvh")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1rltd"]
+atlas = ExtResource("1_nckvh")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n8in2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jm12k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wbbnp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1rltd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_pddey")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_yjaio")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_n8in2")
