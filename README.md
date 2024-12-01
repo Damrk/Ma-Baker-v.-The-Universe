@@ -6,3 +6,4 @@ This is my entry to the HackSussex GameJam 2024, With a setting inspirtions by B
 ## Resources used:
 - Ma Baker Midi: https://bitmidi.com/ma-baker-1-mid
 - Godot Tutorial: https://www.youtube.com/playlist?list=PL8zFvrwKVF4gTA7sKzpDDao1hF-YdCKTM
+- Temp Assets: https://phantomcooper.itch.io/spooky-shmup
