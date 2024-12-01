@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b7a2254l2kdkq"]
+[gd_scene load_steps=5 format=3 uid="uid://b7a2254l2kdkq"]
 
 [ext_resource type="Texture2D" uid="uid://cypwu4hpr5omu" path="res://Assets/Skybox Castle outside.png" id="1_ik5cw"]
 [ext_resource type="Script" path="res://Scenes/background.gd" id="1_ik7t2"]
 [ext_resource type="PackedScene" uid="uid://bwq755jtn4lql" path="res://Scenes/player.tscn" id="3_mkr08"]
+[ext_resource type="PackedScene" uid="uid://bl6tq0ei236u7" path="res://Scenes/Skullhead.tscn" id="4_i1pcr"]
 
 [node name="World" type="Node2D"]
 
@@ -18,3 +19,15 @@ stretch_mode = 1
 
 [node name="Player" parent="." instance=ExtResource("3_mkr08")]
 position = Vector2(93, 165)
+
+[node name="Skullhead" parent="." instance=ExtResource("4_i1pcr")]
+position = Vector2(681, 62)
+
+[node name="Skullhead2" parent="." instance=ExtResource("4_i1pcr")]
+position = Vector2(1191, 122)
+
+[node name="Skullhead3" parent="." instance=ExtResource("4_i1pcr")]
+position = Vector2(928, 268)
+
+[node name="Skullhead4" parent="." instance=ExtResource("4_i1pcr")]
+position = Vector2(1335, 278)
