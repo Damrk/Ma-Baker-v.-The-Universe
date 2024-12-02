@@ -10,7 +10,7 @@ func _process(delta: float) -> void:
 
 func _on_area_entered(area: Area2D) -> void:
 	if area.is_in_group("Projectile"):
-		var explosion = EXPLOSION.instance()
+		var explosion = EXPLOSION.instantiate()
 		explosion.global_position = global_position
 		add_sibling(explosion)
 		queue_free()
